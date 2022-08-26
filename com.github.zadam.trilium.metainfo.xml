@@ -8,7 +8,6 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
-  
   <description>
     <p>Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.</p>
     <p>Features:</p>
@@ -29,15 +28,13 @@
       <li>Web Clipper for easy saving of web content</li>
     </ul>
   </description>
-  
   <launchable type="desktop-id">com.github.zadam.trilium.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/wiki/zadam/trilium/images/screenshot.png</image>
     </screenshot>
   </screenshots>
-
   <releases>
-    <release version="0.54.2" date="2022-08-07"/>
+    <release version="0.54.3" date="2022-08-26"/>
   </releases>
 </component>
