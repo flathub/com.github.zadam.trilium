@@ -32,8 +32,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/zadam/trilium.git
-        tag: v0.58.3-beta
-        commit: "0995c565068ee0ba1a4f629e47e1715fa2f42f96"
+        tag: v0.59.0-beta
+        commit: "fc67dd4d0ac865f2220cbfe9fa6e15ae24ddabc7"
       - generated-sources.json
       - type: script
         dest-filename: trilium.sh
