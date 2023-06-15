@@ -32,8 +32,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/zadam/trilium.git
-        tag: v0.59.4
-        commit: 83d8908ee8e8e471054b4c04d7186ad74a52231e
+        tag: v0.60.3
+        commit: e22f77eae7ba6f6bbc9b89254db48fd03e3b81a2
       - generated-sources.json
       - type: script
         dest-filename: trilium.sh
@@ -57,12 +57,12 @@ modules:
       - cp -r LICENSE $SRC_DIR/
       - cp -r config-sample.ini $SRC_DIR/
       - cp -r electron.js $SRC_DIR/
-      - cp webpack-* $SRC_DIR/
+      - cp webpack.* $SRC_DIR/
       - (cd $SRC_DIR && npm install --only=prod --offline)
       - sed -i -e 's/app\/desktop.js/app-dist\/desktop.js/g' $SRC_DIR/src/views/desktop.ejs
       - sed -i -e 's/app\/mobile.js/app-dist\/mobile.js/g' $SRC_DIR/src/views/mobile.ejs
       - sed -i -e 's/app\/setup.js/app-dist\/setup.js/g' $SRC_DIR/src/views/setup.ejs
-      - rm -r $SRC_DIR/src/public/app-dist/*.mobile.*
+      - rm -r $SRC_DIR/src/public/app-dist/*mobile*
       - cp -r bin/better-sqlite3/linux-desktop-better_sqlite3.node $SRC_DIR/node_modules/better-sqlite3/build/Release/better_sqlite3.node
       - ./node_modules/.bin/electron-packager $SRC_DIR --asar --out=dist --executable-name=trilium --platform=linux --arch=x64 --overwrite
       - rm -r "dist/Trilium Notes-linux-x64/swiftshader"
