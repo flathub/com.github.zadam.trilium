@@ -26,6 +26,7 @@
       <li>Scales well in both usability and performance upwards of 100 000 notes</li>
       <li>Evernote and Markdown import &amp; export</li>
       <li>Web Clipper for easy saving of web content</li>
+      <li>REST API for automation</li>
     </ul>
   </description>
   <launchable type="desktop-id">com.github.zadam.trilium.desktop</launchable>
