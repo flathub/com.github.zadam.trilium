@@ -6,4 +6,3 @@ Icon=com.github.zadam.trilium
 Exec=trilium
 Categories=Office
 Terminal=false
-StartupWMClass=trilium notes

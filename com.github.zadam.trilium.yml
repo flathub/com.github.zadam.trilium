@@ -1,11 +1,11 @@
 app-id: com.github.zadam.trilium
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node18
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: '23.08'
 command: trilium
 separate-locales: false
 finish-args:
@@ -16,7 +16,7 @@ finish-args:
   - --share=network
   - --filesystem=home
 build-options:
-  append-path: /usr/lib/sdk/node16/bin
+  append-path: /usr/lib/sdk/node18/bin
   env:
     NPM_CONFIG_LOGLEVEL: info
 modules:
@@ -26,7 +26,7 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/trilium/flatpak-node/cache
         npm_config_cache: /run/build/trilium/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node16
+        npm_config_nodedir: /usr/lib/sdk/node18
         npm_config_offline: 'true'
         SRC_DIR: dist/trilium-src
     sources:
@@ -65,7 +65,6 @@ modules:
       - rm -r $SRC_DIR/src/public/app-dist/*mobile*
       - cp -r bin/better-sqlite3/linux-desktop-better_sqlite3.node $SRC_DIR/node_modules/better-sqlite3/build/Release/better_sqlite3.node
       - ./node_modules/.bin/electron-packager $SRC_DIR --asar --out=dist --executable-name=trilium --platform=linux --arch=x64 --overwrite
-      - rm -r "dist/Trilium Notes-linux-x64/swiftshader"
       - cp bin/tpl/anonymize-database.sql "dist/Trilium Notes-linux-x64/"
       - cp -r "dist/Trilium Notes-linux-x64" /app/trilium
       - install -Dm755 trilium.sh /app/bin/trilium
