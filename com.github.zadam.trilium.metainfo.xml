@@ -9,7 +9,7 @@
   <project_license>AGPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <description>
-    <p>Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.</p>
+    <p>Trilium Notes is a hierarchical note-taking application with focus on building large personal knowledge bases.</p>
     <p>Features:</p>
     <ul>
       <li>Rich WYSIWYG note editing including e.g. tables, images and math with markdown autoformat</li>
@@ -26,6 +26,7 @@
       <li>Scales well in both usability and performance upwards of 100 000 notes</li>
       <li>Evernote and Markdown import &amp; export</li>
       <li>Web Clipper for easy saving of web content</li>
+      <li>REST API for automation</li>
     </ul>
   </description>
   <launchable type="desktop-id">com.github.zadam.trilium.desktop</launchable>
@@ -35,6 +36,6 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.60.4" date="2023-06-19"/>
+    <release version="0.61.11" date="2023-11-03"/>
   </releases>
 </component>
