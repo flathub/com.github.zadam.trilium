@@ -38,4 +38,9 @@
   <releases>
     <release version="0.63.7" date="2024-05-30"/>
   </releases>
+  <keywords>
+    <keyword>personal knowledge base</keyword>
+    <keyword>note taking</keyword>
+    <keyword>hierarchical notes</keyword>
+  </keywords>
 </component>
