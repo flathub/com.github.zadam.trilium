@@ -1,3 +1,5 @@
 {
-  "only-arches": ["x86_64"]
+  "only-arches": ["x86_64"],
+  "end-of-life": "The application has been renamed to org.triliumnotes.Trilium.",
+  "end-of-life-rebase": "org.triliumnotes.Trilium"  
 }
