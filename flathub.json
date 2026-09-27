@@ -1,5 +1,5 @@
 {
   "only-arches": ["x86_64"],
-  "end-of-life": "The application has been renamed to org.triliumnotes.Trilium.",
+  "end-of-life": "Trilium has moved to org.triliumnotes.Trilium. Due to a change in permissions, your existing database (by default in ~/.local/share/trilium-data) needs to be moved manually. See https://docs.triliumnotes.org/user-guide/setup/desktop#installing-from-flathub for information on how to migrate your data, or restore from a backup.",
   "end-of-life-rebase": "org.triliumnotes.Trilium"  
 }
